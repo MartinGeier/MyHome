@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- MyHome app icon: the house at night, reduced to its key shapes:
+       flat-roof upper floor, slatted balcony, wide ground floor with lit glass doors,
+       and the lamella pergola with its warm light strip on the left. -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0E1322"/>
+      <stop offset="1" stop-color="#1C2640"/>
+    </linearGradient>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6F4EF"/>
+      <stop offset="1" stop-color="#E4E1DA"/>
+    </linearGradient>
+    <linearGradient id="window" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE7B0"/>
+      <stop offset="1" stop-color="#F5B83D"/>
+    </linearGradient>
+    <radialGradient id="pool" cx="0.5" cy="0" r="0.8">
+      <stop offset="0" stop-color="#F5B83D" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#F5B83D" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-200%" width="160%" height="500%">
+      <feGaussianBlur stdDeviation="10"/>
+    </filter>
+  </defs>
+
+  <!-- background (iOS full-bleed; Android uses the colour + the foreground below) -->
+  
+
+  <g id="house" transform="translate(512 525) scale(1.0) translate(-512 -540)">
+    <!-- lawn -->
+    <path d="M150 716 H874 L912 760 H112 Z" fill="#26392F"/>
+
+    <!-- pergola: light pool on the terrace, posts, lamella roof, LED strip -->
+    <ellipse cx="300" cy="718" rx="130" ry="30" fill="url(#pool)"/>
+    <rect x="196" y="528" width="14" height="190" fill="#C9C6BF"/>
+    <rect x="186" y="508" width="214" height="22" rx="3" fill="#E9E6DF"/>
+    <rect x="186" y="526" width="214" height="16" fill="#F5B83D" filter="url(#glow)"/>
+    <rect x="192" y="530" width="202" height="6" fill="#FFE7B0"/>
+
+    <!-- ground floor -->
+    <rect x="384" y="530" width="476" height="188" fill="url(#wall)"/>
+    <!-- shadow line under the upper floor / terrace edge -->
+    <rect x="384" y="530" width="476" height="10" fill="#C9C6BF"/>
+
+    <!-- lit glass doors -->
+    <rect x="412" y="584" width="96" height="134" rx="2" fill="url(#window)"/>
+    <rect x="458" y="584" width="4" height="134" fill="#E0A23A"/>
+    <rect x="612" y="596" width="84" height="122" rx="2" fill="url(#window)"/>
+    <rect x="652" y="596" width="4" height="122" fill="#E0A23A"/>
+    <rect x="752" y="610" width="76" height="70" rx="2" fill="#F0C46A"/>
+
+    <!-- terrace railing on the ground-floor roof (right) -->
+    <rect x="690" y="490" width="170" height="40" fill="#2B3247"/>
+    <rect x="690" y="498" width="170" height="4" fill="#4A5370"/>
+    <rect x="690" y="510" width="170" height="4" fill="#4A5370"/>
+    <rect x="690" y="522" width="170" height="4" fill="#4A5370"/>
+
+    <!-- upper floor -->
+    <rect x="420" y="372" width="300" height="158" fill="url(#wall)"/>
+    <!-- flat roof slab -->
+    <rect x="404" y="350" width="332" height="24" rx="3" fill="#FFFFFF"/>
+    <!-- upper window -->
+    <rect x="628" y="420" width="58" height="62" rx="2" fill="url(#window)"/>
+
+    <!-- slatted balcony in front of the upper floor (left) -->
+    <rect x="404" y="414" width="196" height="52" fill="#2B3247"/>
+    <rect x="404" y="424" width="196" height="5" fill="#4A5370"/>
+    <rect x="404" y="438" width="196" height="5" fill="#4A5370"/>
+    <rect x="404" y="452" width="196" height="5" fill="#4A5370"/>
+
+    <!-- chimney / roof box -->
+    <rect x="456" y="320" width="60" height="32" fill="#E4E1DA"/>
+  </g>
+</svg>

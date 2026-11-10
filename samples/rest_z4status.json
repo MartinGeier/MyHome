@@ -1,0 +1,1 @@
+{"data":{"id":"4","type":"zoneStatus","attributes":{"applications":[{"status":"on","nonLocalPriority":"off","area1":"on","area2":"on","area3":"on","area4":"on","id":"lights"},{"status":"open","nonLocalPriority":"open","area1":"open","area2":"open","area3":"open","area4":"open","id":"shades"}]}}}

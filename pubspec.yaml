@@ -1,0 +1,35 @@
+name: myhome
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  crypto: ^3.0.8
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^11.2.0
+  multicast_dns: ^0.3.3+1
+  shared_preferences: ^2.5.6
+  url_launcher: ^6.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+
+# App icon: the house at night (assets/icon/*.svg are the sources).
+# Regenerate with: dart run flutter_launcher_icons
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/myhome_icon.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#151C30"
+  adaptive_icon_foreground: "assets/icon/myhome_icon_foreground.png"
